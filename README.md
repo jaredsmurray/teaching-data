@@ -100,3 +100,10 @@ That is accepted and noted in the card convention.
 
 `promote.sh` only ever reads the archive. Propagating anything in the other
 direction is a separate, deliberate operation.
+
+## Visibility
+
+Private for now, by decision (2026-08-01): the per-dataset licensing split in
+LICENSING.md is recorded evidence awaiting Jared's adjudication, and nothing
+publishes until it lands. fetch_data.sh works against the private repo via an
+authenticated gh and will work unchanged if the repo later flips public.

@@ -55,10 +55,17 @@ cleanup() { rm -rf "$TMP"; }
 trap cleanup EXIT
 
 # --- 1. source tarball at the tag: tracked data, cards, manifest ------------
+# Anonymous curl first; on failure (private repo -- the current state -- or a
+# hiccup) fall back to authenticated gh. The same path keeps working unchanged
+# if the repo later flips public.
 TARBALL="${REPO_URL}/archive/refs/tags/${TAG}.tar.gz"
 note "fetching source tree at ${TAG}"
 if ! curl -fsSL "$TARBALL" -o "${TMP}/src.tar.gz"; then
-  die "could not download ${TARBALL} (is the tag pushed, and the repo public?)"
+  command -v gh >/dev/null 2>&1 || die \
+    "could not download ${TARBALL} anonymously, and gh is not available (a private repo needs an authenticated gh)"
+  note "anonymous download failed; retrying via gh (private repo?)"
+  gh api "repos/${REPO_OWNER}/${REPO_NAME}/tarball/${TAG}" > "${TMP}/src.tar.gz" \
+    || die "could not download the ${TAG} source tarball via curl or gh"
 fi
 mkdir -p "${TMP}/src"
 tar -xzf "${TMP}/src.tar.gz" -C "${TMP}/src" --strip-components=1
@@ -96,8 +103,13 @@ while IFS=$'\t' read -r kind name label delivery restricted asset _card; do
       || die "gh release download failed for ${asset}"
   else
     note "downloading ${asset} (${label})"
-    curl -fsSL "${REPO_URL}/releases/download/${TAG}/${asset}" -o "${TMP}/${asset}" \
-      || die "could not download release asset ${asset} for tag ${TAG}"
+    if ! curl -fsSL "${REPO_URL}/releases/download/${TAG}/${asset}" -o "${TMP}/${asset}"; then
+      command -v gh >/dev/null 2>&1 || die \
+        "could not download ${asset} anonymously, and gh is not available (a private repo needs an authenticated gh)"
+      note "anonymous download failed; retrying via gh (private repo?)"
+      gh release download "$TAG" --repo "${REPO_OWNER}/${REPO_NAME}" --pattern "$asset" --dir "$TMP" --clobber \
+        || die "could not download release asset ${asset} for tag ${TAG} via curl or gh"
+    fi
   fi
 
   unzip -q -o "${TMP}/${asset}" -d "$DEST"
