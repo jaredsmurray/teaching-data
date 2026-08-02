@@ -129,3 +129,22 @@ location, or Canvas-only distribution — is left open by the refactor plan and 
 not decided here. `fetch_data.sh` is built so that either answer works: it reads
 the per-dataset `restricted:` flag from the manifest and takes the host from an
 overridable `RESTRICTED_REPO` variable.
+
+## Rulings (Jared, 2026-08-02)
+
+- **austin_houses, lending_club, kroger_cheese → public.** Accepted risk:
+  all three circulate widely in public-facing repos already; the pull-back
+  path (re-restrict in a future tag, "obtain from source" card) remains if a
+  rights-holder objects. `restricted: false` in the manifest as of this
+  commit.
+- **returns, portfolios → stay restricted pending an alternative delivery.**
+  Direction: the public-facing object may be an R script that reproduces the
+  datasets rather than the data files themselves; alternative sources under
+  research. Constraint: course numbers are pinned to these exact CSVs, so a
+  re-fetch that is only approximately equal changes displayed numbers.
+- **soc → stays restricted; needs more attention.** Options under
+  consideration: migrate the examples to a federal survey with permissive
+  terms, or document reconstruction of the course examples from the public
+  SCA data export (a simpler export-and-process path than the original
+  full-microdata build). Students currently touch soc only through rendered
+  examples, not directly.

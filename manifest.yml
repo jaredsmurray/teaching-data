@@ -9,7 +9,7 @@ datasets:
     label: "Austin houses"
     card: "cards/data-housing-kaggle.qmd"
     delivery: release-zip
-    restricted: true
+    restricted: false
     archive_dir: "~/Dropbox/data/austin_houses"
     release_asset: "austin_houses.zip"
     source: "Zillow listings for Austin, TX, scraped and assembled by Eric Pierce; published on Kaggle (2021)."
@@ -112,7 +112,7 @@ datasets:
     label: "LendingClub"
     card: "cards/data-lendingclub-kaggle.qmd"
     delivery: release-zip
-    restricted: true
+    restricted: false
     archive_dir: "~/Dropbox/data/lending_club"
     release_asset: "lending_club.zip"
     source: "LendingClub public loan-performance files (2007-2018Q4) compiled on Kaggle by Nathan George (wordsforthewise); extract restricted to 2008-2012 terminal-status accepted loans."
@@ -143,7 +143,7 @@ datasets:
     label: "Kroger cheese"
     card: "cards/data-kroger-cheese.qmd"
     delivery: tracked
-    restricted: true
+    restricted: false
     archive_dir: "~/Dropbox/data/kroger_cheese"
     source: "Compiled by James Scott (UT Austin) for 'Data Science in R: A Gentle Introduction'."
     license: "No formal license stated; made available for educational use through the book's online companion (per the card)."
