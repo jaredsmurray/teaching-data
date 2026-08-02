@@ -1,0 +1,65 @@
+## CPS ASEC Earnings {#sec-data-earnings-cps}
+
+The Annual Social and Economic Supplement (ASEC) to the Current Population Survey (CPS) is a nationally representative household survey conducted each March by the U.S. Census Bureau and Bureau of Labor Statistics. It is one of the principal federal sources for data on annual earnings, employment, and hours worked in the United States. The survey covers civilian non-institutional residents and collects detailed information on labor force participation, earnings, education, and demographics.
+
+This dataset contains information on wages, age, education, and gender for a subsample of prime-age, full-time, full-year wage earners extracted from the Current Population Survey (CPS). The CPS is the primary source for labor market data in the U.S.; its best-known use is in estimating the unemployment rate and related statistics. It is widely used in economics research, including studies of wage determination and human capital.
+
+Each March the CPS includes the Annual Social and Economic Supplement (ASEC), which collects detailed information on income, earnings, and work experience for the prior calendar year. The ASEC is the most comprehensive source of data on annual earnings in the U.S. This dataset was extracted from the 2023 CPS ASEC.
+
+**Resources:**
+
+- [CPS ASEC documentation (Census Bureau)](https://www.census.gov/data/datasets/time-series/demo/cps/cps-asec.html) -- details about the survey design, target population, data collection, and variables available in the ASEC.
+- [Mincer earnings function (Wikipedia)](https://en.wikipedia.org/wiki/Mincer_earnings_function) -- this dataset is suitable for estimating the Mincer earnings function, a widely used model in labor economics that relates wages to schooling and experience.
+
+Data were obtained via the `cpsR` R package, which queries the Census Bureau's API and returns a tidy extract from the 2023 ASEC public-use microdata file. The underlying microdata represent civilian non-institutional respondents nationwide. No license restrictions apply to CPS public-use files; the data are freely available from the U.S. Census Bureau.
+
+| Variable | CPS Source Variable | Type | Unit / Range | Description |
+|---|---|---|---|---|
+| `hrly_wage` | — | Derived (continuous) | USD/hr | Hourly wage rate, computed as `wage_income / (weeks_worked * hrs_per_week)`. **Primary outcome** in all regression models (entered as `log(hrly_wage)`). |
+| `educ_years` | `a_hga` | Derived (continuous) | years, 0–20 | Years of completed schooling, recoded from the CPS educational attainment code `a_hga` using the mapping below. Key predictor in all models. |
+| `experience` | — | Derived (continuous) | years | Potential labor market experience, computed as `age − educ_years − 6`. Enters models linearly (m2) and as a second-degree polynomial (m3, m4). |
+| `weight` | `marsupwt` | Continuous | — | March supplement person weight. Used as observation weight in the weighted regression (m4). |
+| `age` | `a_age` | Discrete | years | Respondent's age in years. Used to derive `experience`; retained in the final file. |
+| `female` | `a_sex` | Binary | 0/1 | Indicator equal to 1 if `a_sex == 2` (female), 0 otherwise. |
+| `wage_income` | `wsal_val` | Continuous | USD | Total wage and salary income in the prior calendar year. Used to derive `hrly_wage`; retained in the final file. |
+| `weeks_worked` | `wkswork` | Discrete | weeks | Number of weeks worked in the prior calendar year. Used as a filter (> 45) and to derive `hrly_wage`. |
+| `hrs_per_week` | `a_uslhrs` | Discrete | hrs/week | Usual hours worked per week. Used as a filter (> 35) and to derive `hrly_wage`. |
+| `educ_code` | `a_hga` | Ordinal | 31–46 | Raw CPS educational attainment code, before recoding. Dropped from the final file (`select()`) but used to construct `educ_years`; documented here for traceability. |
+
+### Education recode (`a_hga` → `educ_years`)
+
+| `a_hga` | CPS label | `educ_years` assigned |
+|---|---|---|
+| 0 | Children (no schooling data) | dropped (filter) |
+| 31 | Less than 1st grade | 0 |
+| 32 | 1st–4th grade | 2.5 |
+| 33 | 5th–6th grade | 5.5 |
+| 34 | 7th–8th grade | 7.5 |
+| 35 | 9th grade | 9 |
+| 36 | 10th grade | 10 |
+| 37 | 11th grade | 11 |
+| 38 | 12th grade, no diploma | 11 |
+| 39 | High school diploma or GED | 12 |
+| 40 | Some college, no degree | 14 |
+| 41 | Associate's degree, vocational | 14 |
+| 42 | Associate's degree, academic | 14 |
+| 43 | Bachelor's degree | 16 |
+| 44 | Master's degree | 18 |
+| 45 | Professional degree (JD, MD, etc.) | 20 |
+| 46 | Doctorate | 20 |
+
+### Sample filters
+
+The following filters were applied sequentially in `fetch_2023.R`:
+
+1. **Full-year workers**: `weeks_worked > 45` — retains respondents who worked more than 45 weeks in the prior year.
+2. **Full-time workers**: `hrs_per_week > 35` — retains respondents who usually worked more than 35 hours per week.
+3. **Positive wage earners**: `wage_income > 0` — drops respondents with zero or missing wage and salary income.
+4. **Valid age**: `age < 100` — excludes top-coded or implausible age values.
+5. **Non-children**: `educ_code != 0` — explicitly excludes child records for which educational attainment is not reported.
+6. **Valid education recode**: `!is.na(educ_years)` — drops any remaining records where the recode produced a missing value.
+7. **Internally consistent age–education**: `age >= educ_years + 6` — requires that age is at least as large as the minimum age at which a person could have completed the stated level of schooling (school entry at age 6).
+8. **Minimum working age**: `age >= 21` — restricts the sample to respondents aged 21 and older, ensuring that the derived `experience` variable is non-negative for all education levels.
+
+This dataset is cited as @earnings-cps.
+

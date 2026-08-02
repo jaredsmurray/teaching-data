@@ -1,0 +1,199 @@
+# teaching-data manifest
+# One entry per dataset. Paths are repo-relative and are also the
+# canonical delivered paths a consumer sees after tools/fetch_data.sh.
+# Maintained by tools/promote.sh; the files: list is the leak-guard --
+# only files declared here are ever promoted out of the Dropbox archive.
+manifest_version: 1
+datasets:
+  austin_houses:
+    label: "Austin houses"
+    card: "cards/data-housing-kaggle.qmd"
+    delivery: release-zip
+    restricted: true
+    archive_dir: "~/Dropbox/data/austin_houses"
+    release_asset: "austin_houses.zip"
+    source: "Zillow listings for Austin, TX, scraped and assembled by Eric Pierce; published on Kaggle (2021)."
+    license: "No formal license stated. Distributed via Kaggle; access requires a Kaggle account (per the card's Provenance note)."
+    files:
+      - path: "data/austin_houses/austin_houses.csv"
+        sha256: e5fa4d0b29a361424f33a30b0904c6021c9747af6d230521e141436614d79437
+        bytes: 9079208
+        used_by_sources: true
+      - path: "data/austin_houses/austin_houses_clean.csv"
+        sha256: 4749a38f62ef7a0b84ce0bf334eb1fdc6879c542e6de5ceb32a7539d8a1387d5
+        bytes: 9021449
+        used_by_sources: false
+      - path: "data/austin_houses/austin_houses_subset.csv"
+        sha256: d64eb4959abe4d22f0d704e9d18f0b0de361c58e4c202799dfe8fb0b4e9298a6
+        bytes: 716837
+        used_by_sources: true
+      - path: "data/austin_houses/austin_houses_subset_clean.csv"
+        sha256: 40baaba93cb199831be293ed806c7f6d3ea353ca9bea46854b294164ca5d81a7
+        bytes: 712233
+        used_by_sources: true
+  mincer:
+    label: "Earnings (CPS)"
+    card: "cards/data-earnings-cps.qmd"
+    delivery: tracked
+    restricted: false
+    archive_dir: "~/Dropbox/data/mincer"
+    source: "2023 CPS ASEC public-use microdata, U.S. Census Bureau / BLS, retrieved via the cpsR package."
+    license: "Public domain U.S. federal public-use file. The card states no license restrictions apply."
+    files:
+      - path: "data/mincer/cps_asec_2023.csv"
+        sha256: ac41e6de2d733d1883de728f397e67e7eca4ee638e7532a342315d30904721e1
+        bytes: 2140527
+        used_by_sources: true
+  returns:
+    label: "Returns"
+    card: "cards/data-returns-2025.qmd"
+    delivery: tracked
+    restricted: true
+    archive_dir: "~/Dropbox/data/returns"
+    source: "Adjusted daily closing prices from Yahoo Finance via tidyquant, 2023-09-30 to 2025-09-29."
+    license: "No redistribution license. The card states Yahoo Finance terms of use restrict redistribution of raw price data; the assembled dataset is intended for educational use."
+    files:
+      - path: "data/returns/mstr_daily_returns_2020-09-28_to_2025-09-26.csv"
+        sha256: 2329190a947f8eae8e521acf4752811d1f05d008a5ef203877a42807c91b71df
+        bytes: 62639
+        used_by_sources: false
+      - path: "data/returns/returns.csv"
+        sha256: de806d31b921251c4a9b28208a7ecba0069c6c417bc392e537112faf50258440
+        bytes: 60294
+        used_by_sources: true
+      - path: "data/returns/returns_prices.csv"
+        sha256: 03143e1d8aa0b58f93a7ccff1b45674efa98f7443944e624420118acbc6b849d
+        bytes: 108318
+        used_by_sources: true
+  portfolios:
+    label: "Portfolios"
+    card: "cards/data-portfolios-2025.qmd"
+    delivery: tracked
+    restricted: true
+    archive_dir: "~/Dropbox/data/portfolios"
+    source: "Adjusted daily closing prices for SPY/EFA/TLT and ^IRX from Yahoo Finance via tidyquant, 2023-09-30 to 2025-09-29."
+    license: "No redistribution license. The card states Yahoo Finance terms of use restrict redistribution of raw price data; the assembled dataset is intended for educational use."
+    files:
+      - path: "data/portfolios/portfolios.csv"
+        sha256: 8fb0f45e1824d256fbb4156766d66036e72ad18433c444521c621dff5c695a12
+        bytes: 15632
+        used_by_sources: true
+  ercot:
+    label: "ERCOT load & weather"
+    card: "cards/data-ercot-shaffer.qmd"
+    delivery: release-zip
+    restricted: false
+    archive_dir: "~/Dropbox/data/ercot"
+    release_asset: "ercot.zip"
+    source: "ERCOT hourly zonal load plus NOAA Local Climatological Data temperatures, curated by Blake Shaffer; replication repo github.com/blakeshaffer/ercotproject."
+    license: "No license stated on the card. Both underlying sources are public agency records (ERCOT, NOAA); the curated panel is published in a public replication repository."
+    files:
+      - path: "data/ercot/ercot_daily_2018.csv"
+        sha256: 6388d3d5f3920450b8726c42da2dd2fbf5d862a349066929c943fb17c0006003
+        bytes: 15761
+        used_by_sources: true
+      - path: "data/ercot/ercotproject/Data/load_1.csv"
+        sha256: 348ea33656fdc203e6247dbb09295f42ac552ce02945ad36fb86e7c8cda182ef
+        bytes: 24140736
+        used_by_sources: true
+      - path: "data/ercot/ercotproject/Data/load_2.csv"
+        sha256: d25edceecbe46c2bf7700bccb93c33f09f69ade183415b066117ab5889d9ec37
+        bytes: 23261787
+        used_by_sources: true
+      - path: "data/ercot/ercotproject/Data/load_3.csv"
+        sha256: 73a23555451481c40daaa9c95553231191c97be271c2cbc5d6f3dc76c0b70eb2
+        bytes: 17422437
+        used_by_sources: true
+      - path: "data/ercot/ercotproject/Data/weather_ncent.csv"
+        sha256: b5520b6cd249807f968c7a0e5c22fdf708cd522922c72f28d48766ae1f8c160c
+        bytes: 6809366
+        used_by_sources: true
+  lending_club:
+    label: "LendingClub"
+    card: "cards/data-lendingclub-kaggle.qmd"
+    delivery: release-zip
+    restricted: true
+    archive_dir: "~/Dropbox/data/lending_club"
+    release_asset: "lending_club.zip"
+    source: "LendingClub public loan-performance files (2007-2018Q4) compiled on Kaggle by Nathan George (wordsforthewise); extract restricted to 2008-2012 terminal-status accepted loans."
+    license: "No license stated. The card defers to the Kaggle dataset page for current license terms; access is Kaggle-account gated."
+    files:
+      - path: "data/lending_club/data/df_all.csv"
+        sha256: 4597d54dd503f9b4499b6f3ca285efd2e0dafd04ded1bef665865b3fd407bf11
+        bytes: 30548993
+        used_by_sources: true
+      - path: "data/lending_club/data/df_subs.csv"
+        sha256: 0af3e1240207ab03c8511204506c06d5f0af09e5f20a0b0a4a5a84177cf310e5
+        bytes: 19497533
+        used_by_sources: true
+  sap_roe:
+    label: "SAP customer ROE"
+    card: "cards/data-sap-nucleus.qmd"
+    delivery: tracked
+    restricted: false
+    archive_dir: "~/Dropbox/data/sap_roe"
+    source: "Transcribed from Table 1 of Nucleus Research note G12 (March 2006); ROE figures from Bloomberg, industry averages from Hoovers via Yahoo! Finance."
+    license: "No license stated. 81 rows of published financial facts transcribed from a publicly circulating research note; one derived column added for this book."
+    files:
+      - path: "data/sap_roe/sap_roe.csv"
+        sha256: 0d4358e01915486b1651e36ce0bee1cc2b9f25de27dc9e2917a37d5ab18a83ac
+        bytes: 4553
+        used_by_sources: true
+  kroger_cheese:
+    label: "Kroger cheese"
+    card: "cards/data-kroger-cheese.qmd"
+    delivery: tracked
+    restricted: true
+    archive_dir: "~/Dropbox/data/kroger_cheese"
+    source: "Compiled by James Scott (UT Austin) for 'Data Science in R: A Gentle Introduction'."
+    license: "No formal license stated; made available for educational use through the book's online companion (per the card)."
+    files:
+      - path: "data/kroger_cheese/kroger.csv"
+        sha256: 6c4044910aa538d67a3d6e4bd32254a9c083102e285618a949480673e5db7da0
+        bytes: 19187
+        used_by_sources: true
+  bloom_wfh:
+    label: "Work from home (Bloom)"
+    card: "cards/data-wfh-bloom.qmd"
+    delivery: tracked
+    restricted: false
+    archive_dir: "~/Dropbox/data/bloom_wfh"
+    source: "Bloom, Han & Liang (2024) hybrid-WFH field experiment; Harvard Dataverse replication archive doi:10.7910/DVN/6X4ZZL."
+    license: "Creative Commons CC BY 4.0 (stated on the card). Article published open access in Nature."
+    files:
+      - path: "data/bloom_wfh/attrition.csv"
+        sha256: c37898b3f5e427f1b0663440ea2ec2eec8b46aead17dd83ff977627fd65b8725
+        bytes: 82080
+        used_by_sources: true
+      - path: "data/bloom_wfh/codelines.csv"
+        sha256: dca9dbbfa8fcf1ee6ce9ff64cfc694585760b7896dc941403c829d58016ea46b
+        bytes: 2257262
+        used_by_sources: true
+  soc:
+    label: "Survey of Consumers"
+    card: "cards/data-consumer-soc.qmd"
+    delivery: release-zip
+    restricted: true
+    archive_dir: "~/Dropbox/data/soc"
+    release_asset: "soc.zip"
+    source: "University of Michigan Surveys of Consumers monthly microdata, Jan 1978 - early 2026; processed extract."
+    license: "No license stated on the card. UMich Surveys of Consumers microdata are distributed under the ISR/SCA site's own terms; redistribution not established."
+    files:
+      - path: "data/soc/soc_clean.csv"
+        sha256: 633e6d7201227ae933e8d663b99d81a45f3afc6550ef8f93aae278253f28145c
+        bytes: 159034807
+        packaged_as: "soc_clean.csv.gz"
+        used_by_sources: true
+  hamermesh_evals:
+    label: "Course evaluations"
+    card: "cards/data-evals-hamermesh.qmd"
+    delivery: tracked
+    restricted: false
+    archive_dir: "~/Dropbox/data/hamermesh_evals"
+    source: "Hamermesh & Parker (2005) UT Austin course evaluations and instructor beauty ratings; the teaching extract distributed on CRAN in the AER package as TeachingRatings."
+    license: "No license stated on the card, but the same extract is redistributed publicly on CRAN in AER (GPL-2/GPL-3). One added column ('generation') is a teaching recode."
+    files:
+      - path: "data/hamermesh_evals/hamermesh_evals.csv"
+        sha256: 3fa5606ff930dbe17c971f4b3691d4cd8f741a31ea116f027849f39025a89b03
+        bytes: 35483
+        used_by_sources: true

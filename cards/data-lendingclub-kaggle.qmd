@@ -1,0 +1,81 @@
+## LendingClub Accepted Loans {#sec-data-lendingclub-kaggle}
+
+LendingClub operated an online marketplace that matched individual borrowers with
+investors who funded loans in small fractional shares ("notes"). To let investors screen
+and price loans, the company published detailed loan-level records for every funded loan —
+borrower credit attributes recorded at origination together with the loan's subsequent
+repayment history. These data are widely used to study consumer-credit default and loan
+pricing. This card documents a cleaned extract used to model loan **charge-off** and
+investor **payoff**.
+
+**Resources:**
+
+- [Kaggle dataset](https://www.kaggle.com/datasets/wordsforthewise/lending-club)
+
+**Provenance.** The underlying data were released by LendingClub Corporation (San Francisco,
+CA) as public loan-performance files covering U.S. consumer loans issued 2007–2018 Q4, and
+were compiled into a single Kaggle dataset by Nathan George (user *wordsforthewise*). This
+extract uses only the **accepted/funded** loans and restricts to loans **issued 2008–2012**
+that had reached a terminal status — `Fully Paid` or `Charged Off` (92,902 loans; 15.4%
+charged off). It retains 45 analysis-relevant columns and adds a small number of derived
+fields (below). Two files share this schema: `df_all.csv` (all purposes) and `df_subs.csv`,
+which further restricts to three purposes (`debt_consolidation`, `home_improvement`,
+`small_business`). Data are available at the Kaggle dataset page linked above; consult that
+page for current license terms. See @lendingclub-kaggle for the primary citation.
+
+### Variables {.unnumbered}
+
+Columns are grouped by role. **Targets** are modeled outcomes; **payment record** fields
+are realized after origination and are used only to construct the payoff targets (never as
+predictors of default). Derived fields (created in the extract) are labeled and defined in
+terms of their source columns.
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `fully_paid` | Binary | 0/1 | 1 = loan Fully Paid, 0 = Charged Off. Primary classification target (charge-off = 1 − `fully_paid`). |
+| `loan_status` | Categorical | Fully Paid, Charged Off | Terminal loan outcome; source of `fully_paid`. |
+| `payoff_net` | Derived (continuous) | USD, 0–62,080 | `total_pymnt − collection_recovery_fee`: dollars netted to the investor. Primary payoff-regression target. |
+| `payoff_frac` | Derived (continuous) | fraction, 0–1.77 | `payoff_net / funded_amnt`: scale-free payoff (share of funded amount returned). |
+| `payoff_gross` | Derived (continuous) | USD, 0–62,080 | `= total_pymnt`: gross dollars the borrower paid back (already includes recoveries). |
+| `recovery_channel` | Categorical (derived) | collection / debt_sale / no_recovery | How a charged-off loan resolved, backed out from `recoveries` and `collection_recovery_fee`. `NA` for fully-paid loans. |
+| `loan_amnt` | Continuous | USD, 500–35,000 | Amount the borrower requested/listed. |
+| `funded_amnt` | Continuous | USD, 500–35,000 | Amount actually funded (≈ `loan_amnt`). |
+| `funded_amnt_inv` | Continuous | USD, 0–35,000 | Portion of the loan funded by investors. |
+| `term` | Binary | 36 or 60 months | Number of scheduled monthly payments. |
+| `int_rate` | Continuous | %, 5.42–24.89 | Loan interest rate. |
+| `installment` | Continuous | USD, 16–1,388 | Scheduled monthly payment. |
+| `grade` | Ordinal | A–G | LendingClub-assigned risk grade (A best). |
+| `sub_grade` | Ordinal | A1–G5 | Finer risk subgrade within `grade`. |
+| `credit_score` | Derived (discrete) | 45–79 | `80 − rank(sub_grade)`: a continuous re-encoding of `sub_grade`. Kept for exposition only; not used as a model predictor (redundant with `grade`/`sub_grade`). |
+| `purpose` | Categorical | 14 levels | Borrower-stated loan purpose (e.g., `debt_consolidation`). |
+| `title` | Categorical (text) | — | Borrower-supplied loan title (free text, high-cardinality). |
+| `issue_d` | Date (month) | e.g. Apr-2011 | Month the loan was issued. |
+| `annual_inc` | Continuous | USD | Self-reported annual income. |
+| `dti` | Continuous | ratio, 0–35 | Debt-to-income: monthly non-mortgage debt payments ÷ monthly income. |
+| `emp_length` | Ordinal | <1 to 10+ years | Employment length in years (`NA` when not provided). |
+| `emp_title` | Categorical (text) | — | Borrower job title (free text, high-cardinality; `NA` ≈ 6%). |
+| `home_ownership` | Categorical | RENT, OWN, MORTGAGE, OTHER, NONE | Home-ownership status. |
+| `verification_status` | Categorical | Not Verified, Source Verified, Verified | Whether/how income was verified. |
+| `addr_state` | Categorical | 49 U.S. states | Borrower state of residence. |
+| `zip_code` | Categorical | 3-digit prefix (e.g. 007xx) | First three digits of the borrower ZIP code. |
+| `fico_approx` | Derived (continuous) | FICO points, 662–847.5 | Midpoint of the origination FICO band (`(fico_range_low + fico_range_high)/2`). |
+| `credit_history_age` | Derived (continuous) | years, 3.0–65.4 | Years between the earliest reported credit line and `issue_d`. |
+| `open_acc` | Discrete | count, 1–49 | Number of open credit lines. |
+| `total_acc` | Discrete | count, 2–99 | Total number of credit lines ever. |
+| `revol_bal` | Continuous | USD | Total revolving credit balance. |
+| `revol_util` | Continuous | %, 0–104 | Revolving-credit utilization rate (`NA` ≈ 0.1%). |
+| `inq_last_6mths` | Discrete | count, 0–8 | Credit inquiries in the past 6 months. |
+| `had_delinq` | Binary (derived) | 0/1 | 1 if the borrower has any delinquency on record (from `mths_since_last_delinq`). |
+| `delinq_recent` | Binary (derived) | 0/1 | 1 if any 30+ days-past-due delinquency in the last 2 years (`delinq_2yrs > 0`). |
+| `has_pub_rec` | Binary (derived) | 0/1 | 1 if the borrower has any derogatory public record (`pub_rec > 0`). |
+| `total_pymnt` | Continuous | USD | Total payments received to date (includes `recoveries`). Payment record. |
+| `total_rec_prncp` | Continuous | USD | Principal received to date. Payment record. |
+| `total_rec_int` | Continuous | USD | Interest received to date. Payment record. |
+| `total_rec_late_fee` | Continuous | USD | Late fees received to date. Payment record. |
+| `recoveries` | Continuous | USD | Gross post-charge-off recovery. Payment record; defines `recovery_channel`. |
+| `collection_recovery_fee` | Continuous | USD | Post-charge-off collection fee. Payment record; subtracted to form `payoff_net`. |
+| `last_pymnt_d` | Date (month) | e.g. Aug-2013 | Month of the last payment received (`NA` ≈ 0.1%). |
+| `id` | Identifier | — | Unique LendingClub loan ID. |
+| `year` | Discrete | 2008–2012 | Loan issue year; also the subsetting filter. |
+
+: Variables in the LendingClub accepted-loans extract. {#tbl-vars-lendingclub-kaggle}

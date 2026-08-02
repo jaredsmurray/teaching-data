@@ -1,0 +1,32 @@
+## SAP Customer ROE {#sec-data-sap-nucleus}
+
+In 2005 SAP began running advertisements claiming that companies running SAP software are 32% more profitable than companies that don't, citing a study it had commissioned from Stratascope Inc. that was never released for public scrutiny [@carr-sap-lies]. In March 2006 the technology analyst firm Nucleus Research pushed back with a research note titled "SAP customers are 20 percent less profitable than their peers." Nucleus compiled the publicly traded companies appearing on SAP's own web site — 81 firms — looked up each one's return on equity (ROE) from published financial data, and compared it with the average ROE of the firm's industry. The average across the 81 firms was 12.6%, against an industry-average benchmark of 15.7%. These data are used in the notes to estimate the mean ROE among SAP customers, to test hypotheses about both companies' claims, and to examine what a non-random sample can and cannot support.
+
+**Resources:**
+
+- [Nucleus Research note G12 (PDF)](https://www.oracle.com/us/corporate/analystreports/industries/059823.pdf)
+- [Rough Type on the ad campaign](https://www.roughtype.com/?p=225)
+- [Rough Type on the Stratascope study](https://www.roughtype.com/?p=150)
+
+**Provenance.** The figures are transcribed from Table 1 of @sap-nucleus (Nucleus Research note G12, March 2006), which lists each company with its SAP solution(s), industry, ROE, and industry-average ROE. Nucleus reports gathering the ROE figures from Bloomberg and the industry averages from Hoovers via Yahoo! Finance. The note itself circulates today courtesy of Oracle — an SAP competitor with an obvious interest in its conclusions — though Nucleus states the analysis was conducted independently and not commissioned by any company. The one derived column, `roe_diff`, was added for this book.
+
+**A caution on sampling.** These 81 firms are not a random sample of SAP customers: they are the publicly traded companies SAP itself chose to feature on its web site. The inference chapter leans on this fact — analyses of these data describe SAP's showcased customers, not SAP customers in general.
+
+### Dataset versions {.unnumbered}
+
+| File | Rows | Columns | Description |
+|---|---|---|---|
+| `sap_roe.csv` | 81 | 6 | One row per publicly traded SAP customer in the Nucleus note's Table 1. |
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `roe` | Continuous | %, −91.8 to 116.4 | The company's return on equity from published financial data at the time of the report. The outcome variable throughout. |
+| `industry_roe` | Continuous | %, 2.6 to 48.8 | Average ROE of the company's industry, as compiled by Nucleus. |
+| `roe_diff` | Derived (continuous) | pp, −95.5 to 69.3 | `roe − industry_roe`: the company's ROE gap relative to its industry average, in percentage points. |
+| `company` | Identifier | — | Company name as printed in the note (Adidas-Salamon, BMW, Caterpillar, Xerox, …). |
+| `sap_solution` | Categorical | — | SAP product area(s) deployed (CRM, ERP, SCM, PLM, SRM, SAM, Mobile); comma-separated when a company appears with several. |
+| `industry` | Categorical | 30 values | Industry label used to define the peer benchmark. |
+
+: Variables in the SAP customer ROE data. {#tbl-vars-sap-nucleus}

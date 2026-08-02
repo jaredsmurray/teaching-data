@@ -1,0 +1,76 @@
+---
+title: "Data Documentation"
+format:
+  html:
+    toc: true
+    toc-depth: 2
+---
+
+## Three-Asset Portfolio Series (2023–2025) {#sec-data-portfolios-2025}
+
+These data document weekly simple returns and adjusted prices for three
+exchange-traded funds—a U.S. equity market fund (SPY), an international
+developed-markets equity fund (EFA), and a long-term U.S. Treasury bond fund
+(TLT)—alongside a contemporaneous weekly risk-free rate, covering the period
+September 30, 2023 to September 29, 2025. The three funds were chosen for the
+portfolio construction material in the course notes: over this window they had
+nearly identical volatility but quite different mean returns, and the two
+equity funds are strongly correlated with each other while the bond fund is
+nearly uncorrelated with both. Prices are sourced from Yahoo Finance and
+converted to weekly simple returns using split- and dividend-adjusted closing
+prices.
+
+The dataset ships as a single file, `portfolios.csv`, containing the weekly
+returns, the risk-free rate, and the aligned weekly adjusted closing prices.
+The rows sit on the same Friday grid as the broader weekly asset returns panel
+(@sec-data-returns-2025), so the two datasets can be joined on `date`; the
+`SPY` column here is the same series as that dataset's `market` column.
+
+**Provenance.** Adjusted daily closing prices were retrieved from Yahoo Finance
+via the `tidyquant` R package. The data request covers September 30, 2023 to
+September 29, 2025 (`start_date` and `end_date` as set in `data_extract.R`).
+The risk-free rate is proxied by the 13-week U.S. Treasury bill
+secondary-market yield (`^IRX`), converted from an annualized percentage to a
+weekly decimal rate by dividing by 100 and then by 52; forward-filling patches
+any holiday gaps in that series. Price columns record the last available split-
+and dividend-adjusted daily close on or before each weekly return date, so
+prices and returns are aligned on the same Friday grid. Yahoo Finance terms of
+use restrict redistribution of raw price data; this assembled dataset is
+intended for educational use. See @portfolios-2025 for retrieval details.
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `date` | Discrete (date) | YYYY-MM-DD | End-of-week date corresponding to the Friday close used by `tq_transmute()` with `period = "weekly"`. |
+| `SPY` | Continuous | proportion | Weekly simple return on SPY (SPDR S&P 500 ETF Trust), a proxy for the U.S. stock market. |
+| `EFA` | Continuous | proportion | Weekly simple return on EFA (iShares MSCI EAFE ETF), a proxy for developed stock markets outside the U.S. |
+| `TLT` | Continuous | proportion | Weekly simple return on TLT (iShares 20+ Year Treasury Bond ETF), a proxy for long-term U.S. government bonds. |
+| `rf` | Derived (continuous) | proportion | Weekly risk-free rate, computed as `(^IRX / 100) / 52` from the annualized 13-week T-bill yield. |
+| `SPY_price`, `EFA_price`, `TLT_price` | Continuous | USD | Split- and dividend-adjusted closing price on each weekly return date (last available daily close on or before the date). |
+
+: Variables in the three-asset portfolio data. {#tbl-vars-portfolios-2025}
+
+### Tickers {.unnumbered}
+
+| Ticker | Full name | Type | Description |
+|---|---|---|---|
+| [`SPY`](https://www.etf.com/SPY) | SPDR S&P 500 ETF Trust | ETF — U.S. equity | Tracks the S&P 500 index of large-capitalization U.S. stocks; the oldest and one of the largest ETFs, commonly used as a proxy for the U.S. stock market. |
+| [`EFA`](https://www.etf.com/EFA) | iShares MSCI EAFE ETF | ETF — international equity | Tracks the MSCI EAFE index of large- and mid-capitalization stocks in developed markets outside North America (Europe, Australasia, and the Far East). |
+| [`TLT`](https://www.etf.com/TLT) | iShares 20+ Year Treasury Bond ETF | ETF — fixed income | Holds U.S. Treasury bonds with at least 20 years to maturity; essentially free of default risk but highly sensitive to interest-rate movements because of its long duration. |
+
+: Asset tickers in the three-asset portfolio data. {#tbl-tickers-portfolios-2025}
+
+---
+
+```bibtex
+@misc{portfolios-2025,
+  title        = {Three-Asset Weekly Return and Price Series, October 2023--September 2025},
+  year         = {2025},
+  howpublished = {Assembled from Yahoo Finance via the \texttt{tidyquant} R package
+                  (\url{https://cran.r-project.org/package=tidyquant})},
+  note         = {SPY, EFA, and TLT ETFs and 13-week T-bill rate;
+                  weekly simple returns and adjusted prices, 2023-09-30 to 2025-09-29.
+                  Accessed: 2026-07-14}
+}
+```

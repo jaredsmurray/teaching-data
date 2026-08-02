@@ -1,0 +1,99 @@
+## Surveys of Consumers {#sec-data-consumer-soc}
+
+The Surveys of Consumers (SCA) is a recurring household survey conducted by the
+University of Michigan tracking consumer sentiment, financial expectations, and economic
+attitudes. The survey is designed to measure how households perceive their current
+financial situation relative to the recent past, their expectations about the near-term
+economic outlook, and their subjective assessments of price and income dynamics.
+Individual responses are aggregated into the widely cited Index of Consumer Sentiment
+(ICS) and its two component sub-indices. The dataset covers 342,345 interviews conducted
+between January 1978 and early 2026, spanning 578 distinct survey months.
+
+**Resources:**
+
+- [Surveys of Consumers — University of Michigan](https://data.sca.isr.umich.edu)
+
+**Provenance.** The Surveys of Consumers is conducted monthly by the Survey Research
+Center at the University of Michigan. Respondents are a nationally representative sample of
+U.S. households, reached by telephone (random-digit dial, landline and cell) and,
+from the mid-2010s onward, by addressed-based web panel. The panel includes a
+reinterview component: a share of respondents are re-contacted after approximately six
+months, enabling a limited longitudinal dimension. The working file `soc_clean.csv` is
+a processed extract from the raw microdata; variable names have been standardized to
+snake_case, numeric missing-value codes have been replaced with `NA`, and every
+categorical variable has been given a companion `_label` text column. See @consumer-soc
+for the primary citation.
+
+### Variables {.unnumbered}
+
+*Note on label columns.* Every categorical variable documented below has a companion
+`{variable}_label` column in `soc_clean.csv` containing the text label corresponding to
+the integer code (e.g., `sample_type_label = "Landline RDD Interview"` alongside
+`sample_type = 1`). The label columns are not listed separately in the table below.
+
+*Note on DK codes.* For categorical variables, "Don't know" responses are retained as a
+labeled category rather than set to `NA`. For numeric probability variables
+(`prob_income_incr_5yr`, `prob_income_incr_1yr`, `prob_job_loss_5yr`,
+`prob_soc_sec_adequate`), the DK code 998 is left as an out-of-range numeric value;
+analysts should filter to values ≤ 100 before computing statistics.
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `case_id` | Discrete | 1–342,346 | Sequential case identification number. |
+| `interview_id` | Discrete | — | Unique interview identifier assigned by the survey. |
+| `survey_date` | Date | 1978-01 to 2026-02 | Date of interview, set to the first of the survey month. Parsed from the original YYYYMM integer. Quarter is derivable via `lubridate::quarter(survey_date)`. |
+| `survey_year` | Discrete | 1978–2026 | Four-digit survey year. |
+| `interview_id_prev` | Discrete | — | Interview identifier from the prior wave; `NA` for first-time respondents. Used to link reinterview records. |
+| `date_prev` | Date | — | Date of prior interview; `NA` for first-time respondents. |
+| `interview_id_prev2` | Discrete | — | Interview identifier from the first wave for respondents on their third interview; otherwise `NA`. |
+| `date_prev2` | Date | — | Date of first interview for third-wave respondents; otherwise `NA`. |
+| `sample_type` | Categorical | 1–8 | Sampling frame and interview iteration: landline RDD (interview/reinterview), cell RDD (interview/reinterview/second reinterview), or addressed-based web (interview/first reinterview/second reinterview). |
+| `interview_method` | Categorical | 1–4 | Mode of data collection: telephone CATI (1), web (2), telephone paper-and-pencil (3), or in-person (4). Value 4 appears in the codebook but is absent from this extract. |
+| `weight` | Continuous | ≥ 0, mean = 1 | Recommended survey weight for estimation. Equals `weight_hh` for telephone interviews and `weight_quintmed` for web interviews. |
+| `weight_hh` | Continuous | ≥ 0, mean = 1 | Household head weight bracketed on phone data; `NA` for web-only records. |
+| `weight_quintmed` | Continuous | ≥ 0, mean = 1 | Household head weight bracketed on quintile medians; populated for web-only records. |
+| `idx_consumer_sentiment` | Continuous | 2–151 | Index of Consumer Sentiment (ICS): a composite index summarizing overall consumer economic confidence. |
+| `idx_current_conditions` | Continuous | 2–154 | Index of Current Economic Conditions (ICC): component of ICS measuring perceptions of present financial and buying conditions. |
+| `idx_consumer_expectations` | Continuous | 2–149 | Index of Consumer Expectations (ICE): component of ICS measuring expectations about future economic conditions. |
+| `fin_vs_year_ago` | Categorical | 1, 3, 5, 8 | Self-reported change in personal financial situation relative to a year ago: Better (1), Same (3), Worse (5), Don't know (8). `NA` where not applicable. |
+| `fin_reason1` | Categorical | 40+ codes | Primary reason given for financial change (favorable codes 10–39; unfavorable codes 50–78; 0 = no change / no reason; 98 = Don't know; 333 = no change, no reason, web only). `NA` where not applicable. |
+| `fin_reason2` | Categorical | 40+ codes | Secondary reason for financial change; same coding as `fin_reason1`. Code 0 indicates no second reason was given. |
+| `fin_expect_next_year` | Categorical | 1, 3, 5, 8 | Expected change in personal financial situation over the next year: Will be better (1), Same (3), Will be worse (5), Don't know (8). |
+| `econ_vs_year_ago` | Categorical | 1, 3, 5, 8 | Assessment of business conditions relative to a year ago: Better (1), About the same (3), Worse (5), Don't know (8). |
+| `econ_expect_next_year` | Categorical | 1, 3, 5, 8 | Expected business conditions a year from now: Better (1), About the same (3), Worse (5), Don't know (8). |
+| `bus_conditions_12mo` | Categorical | 1–5, 8 | Assessment of whether the next 12 months will bring good or bad times financially, on a 5-point scale from Good times (1) to Bad times (5); 8 = Don't know. |
+| `bus_conditions_5yr` | Categorical | 1–5, 98 | 5-year economic outlook on the same Good–Bad scale; 98 = Don't know. |
+| `price_dir_1yr` | Categorical | 1, 2, 3, 5, 8 | Expected direction of general price change over the next 12 months: Go up (1), Go up at same rate (2), Same (3), Go down (5), Don't know (8). |
+| `price_pct_1yr` | Continuous | 1–95, 98 | Expected percent price change over the next year; 98 = Don't know (out-of-range, not `NA`). |
+| `price_expect_1yr` | Continuous | −95 to 95 | Recoded composite of `price_dir_1yr` and `price_pct_1yr`: positive values indicate expected inflation, negative values expected deflation. Out-of-range sentinels: −97 = DK how much down, 96 = DK how much up, 98 = DK direction. |
+| `price_dir_5yr` | Categorical | 1, 2, 3, 5, 8 | Expected direction of price change over the next 5–10 years; same coding as `price_dir_1yr`. |
+| `price_pct_5yr` | Continuous | 1–95, 98 | Expected percent price change per year over 5–10 years; 98 = Don't know. |
+| `price_expect_5yr` | Continuous | −95 to 95 | Recoded 5-year price expectation; same sign convention as `price_expect_1yr`. |
+| `income` | Continuous | 0–999,999 USD | Total household income from all sources in the prior calendar year, in current dollars. Bracket midpoints used where the open-format question was answered in bracket form. |
+| `income_format` | Categorical | 1–3 | Whether `income` was collected as an open-format dollar amount (1), a bracket question answered in open format and coded to midpoint (2), or a bracket question answered in bracket form and coded to midpoint (3). `NA` in recent survey waves. |
+| `income_ptile_bottom10` | Binary | 1 / 5 | Indicator of whether the household falls in the bottom 10% (1) or top 90% (5) of the income distribution. |
+| `income_ptile_top10` | Binary | 1 / 5 | Indicator of whether the household falls in the top 10% (1) or bottom 90% (5) of the income distribution. |
+| `income_ptile_bottom50` | Binary | 1 / 5 | Indicator of whether the household falls in the bottom 50% (1) or top 50% (5) of the income distribution. |
+| `income_quintile` | Ordinal | 1–5 | Income quintile: Bottom 20% (1) through Top 20% (5). |
+| `homeown` | Categorical | 1, 2 | Home ownership status: Owns or buying (1), Rents (2). |
+| `invest_stocks` | Categorical | 1, 5 | Whether the household holds any stock market investments — direct holdings, mutual funds, or retirement accounts such as 401(k)s, IRAs, or Keogh accounts: Yes (1), No (5). The No category includes DK and NA responses per the original coding. |
+| `age` | Discrete | 18–97 | Age of respondent in years. Top-coded at 97 (i.e., 97 = "97 or older"). |
+| `region` | Categorical | 1–4 | U.S. Census region of residence: West (1), North Central (2), Northeast (3), South (4). |
+| `sex` | Categorical | 1, 2 | Sex of respondent: Male (1), Female (2). |
+| `marital_status` | Categorical | 1, 3, 4, 5 | Marital status: Married or partnered (1), Divorced or separated (3), Widowed (4), Never married (5). |
+| `num_children` | Discrete | 0–5 | Number of household members aged 17 or younger. |
+| `num_adults` | Discrete | 1–9 | Number of household members aged 18 or older, including the respondent. |
+| `education` | Ordinal | 1–6 | Highest level of education completed: Grade 0–8 without HS diploma (1), Grade 9–12 without HS diploma (2), HS diploma (3), Some college without degree (4), College degree (5), Graduate degree (6). |
+| `educ_college_grad` | Categorical | 1, 5, 8 | Holds a college degree: Yes (1), No (5), Don't know (8). |
+| `educ_hs_grad` | Categorical | 1, 5, 8 | Holds a high school diploma or equivalency: Yes (1), No (5), Don't know (8). |
+| `party_affil` | Categorical | 1, 2, 3, 8 | Political party identification: Republican (1), Democrat (2), Independent or no preference (3), Don't know (8). `NA` for roughly 245,000 records from survey waves in which this question was not asked. |
+| `party_rep_strength` | Categorical | 1, 5, 8 | Strength of Republican identification (asked only of self-identified Republicans): Strong (1), Not so strong (5), Don't know (8). |
+| `party_dem_strength` | Categorical | 1, 5, 8 | Strength of Democratic identification (asked only of self-identified Democrats): Strong (1), Not so strong (5), Don't know (8). |
+| `party_closer` | Categorical | 1, 5, 6, 8 | For Independents: which party do you feel closer to? Republican (1), Democratic (5), Neither (6), Don't know (8). |
+| `prob_income_incr_5yr` | Continuous | 0–100, 998 | Subjective percent probability that own income will increase by more than inflation over the next five years. 998 = Don't know (retained as out-of-range; filter to ≤ 100 for analysis). |
+| `prob_income_incr_1yr` | Continuous | 0–100, 998 | Subjective percent probability that own income will be higher next year than in the past 12 months. 998 = Don't know. `NA` where not applicable or where respondent reported no personal income (see `no_personal_income`). |
+| `no_personal_income` | Binary | TRUE / FALSE | TRUE for the 363 respondents who volunteered having no personal income when asked `prob_income_incr_1yr`. These records have `NA` in the probability column. |
+| `prob_job_loss_5yr` | Continuous | 0–100, 998 | Subjective percent probability of losing a job the respondent (or spouse/partner) wanted to keep during the next five years. 998 = Don't know. |
+| `prob_soc_sec_adequate` | Continuous | 0–100, 998 | Subjective percent probability that Social Security and pension income will be adequate to maintain living standards in retirement. 998 = Don't know. |
+
+: Variables from the Surveys of Consumers data. {#tbl-vars-consumer-soc}

@@ -1,0 +1,1613 @@
+"treat","role","male","live_far","attrite_perc"
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Control","Manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female",NA,0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Control","Manager","Female",NA,0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,100
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,100
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Female",NA,100
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,100
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,100
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,100
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female",NA,0
+"Control","Manager","Female",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Manager","Female",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",100
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,100
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,100
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Female",NA,0
+"Treatment","Manager","Male",NA,100
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,100
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female",NA,0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,100
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male",NA,100
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",100
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,100
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,100
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,100
+"Treatment","Manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,100
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Control","Manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Manager","Male",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female",NA,100
+"Control","Manager","Male",NA,100
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Male",NA,0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",100
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",100
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",100
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female",NA,0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male",NA,0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",100
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male",NA,0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",100
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",100
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute <= 90 mins",0
+"Treatment","Manager","Female","Commute <= 90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female",NA,100
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Manager","Female","Commute <= 90 mins",100
+"Control","Manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female",NA,0
+"Control","Non-manager","Female","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Female","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Control","Non-manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Non-manager","Male","Commute <= 90 mins",0
+"Control","Manager","Male","Commute <= 90 mins",0
+"Control","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female","Commute >  90 mins",0
+"Treatment","Non-manager","Female",NA,0
+"Control","Manager","Male","Commute >  90 mins",0
+"Treatment","Manager","Male","Commute <= 90 mins",0

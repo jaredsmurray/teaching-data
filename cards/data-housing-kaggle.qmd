@@ -1,0 +1,123 @@
+## Austin House Listings {#sec-data-housing-kaggle}
+
+This dataset contains listing-level information on residential properties in Austin, Texas scraped from Zillow and assembled by Eric Pierce. Variables include sale price, structural characteristics, lot and living area, school proximity metrics, and free-text listing descriptions. The data are used here to predict home sale prices from a property's attributes — both structured variables such as square footage, bedroom count, and neighborhood school ratings, and unstructured listing descriptions encoded as dense text embeddings.
+
+**Resources:**
+
+- [Kaggle dataset](https://www.kaggle.com/datasets/ericpierce/austinhousingprices)
+
+**Provenance.** The data were scraped from Zillow by Eric Pierce and published on Kaggle in 2021. Coverage is limited to Austin, Texas residential listings with recorded sale prices. The dataset is distributed via Kaggle without a formal license; access requires a Kaggle account. See @housing-kaggle for the primary citation.
+
+### Dataset versions {.unnumbered}
+
+Four processed files are exported by `preprocess.Rmd`. All four retain the same 34 columns from the Kaggle source (plus the derived variable `age`); the subset versions apply additional geographic and structural filters.
+
+| File | Rows | Columns | Description |
+|---|---|---|---|
+| `austin_houses.csv` | All Austin single-family homes | 35 | Full processed dataset. Filtered to Austin city, single-family home type, `living_area_sq_ft` < 25,000, `lot_size_sq_ft` < 43,560 (one acre). |
+| `austin_houses_subset.csv` | Three-zipcode sample | 35 | Restricted to ZIP codes 78721, 78723, and 78731; `living_area_sq_ft` < 4,000; 2–5 bedrooms; three anomalous listings removed. |
+| `austin_houses_embeddings.csv` | Same as `austin_houses` | 35 + 1,536 | Full processed dataset with 1,536-dimensional text embeddings appended, joined on `zpid`. |
+| `austin_houses_subset_embeddings.csv` | Same as `austin_houses_subset` | 35 + 1,536 | Three-zipcode subset with embeddings appended. |
+| `austin_houses_clean.csv` | 13,485 | 35 | Full dataset after a data-quality pass removing listings with recording errors (rules and per-listing rationale in `preprocess.Rmd` and `austin_dq_audit.qmd`, kept with the source data). |
+| `austin_houses_subset_clean.csv` | 1,096 | 35 | Three-zipcode subset derived from the clean full file (same zip/area/bedroom filters). Used by the problem sets. |
+
+### Variable renaming {.unnumbered}
+
+All column names are converted from camelCase to snake_case on load (`preprocess.Rmd`, chunk 1). Three columns that were already lowercase in the source (`zpid`, `zipcode`, `latest_saledate`, `latest_salemonth`, `latest_saleyear`) are unchanged. Thirteen columns are dropped during preprocessing and do not appear in the exported files.
+
+| Original (Kaggle) | Renamed | Retained |
+|---|---|---|
+| `zpid` | `zpid` | Yes |
+| `streetAddress` | `street_address` | Yes |
+| `zipcode` | `zipcode` | Yes |
+| `description` | `description` | Yes |
+| `latitude` | `latitude` | Yes |
+| `longitude` | `longitude` | Yes |
+| `garageSpaces` | `garage_spaces` | Yes |
+| `hasAssociation` | `has_association` | Yes |
+| `hasGarage` | `has_garage` | Yes |
+| `hasSpa` | `has_spa` | Yes |
+| `hasView` | `has_view` | Yes |
+| `homeType` | `home_type` | Yes |
+| `yearBuilt` | `year_built` | Yes |
+| `latestPrice` | `latest_price` | Yes |
+| `latest_saledate` | `latest_saledate` | Yes |
+| `latest_salemonth` | `latest_salemonth` | Yes |
+| `latest_saleyear` | `latest_saleyear` | Yes |
+| `numOfPhotos` | `num_of_photos` | Yes |
+| `numOfAppliances` | `num_of_appliances` | Yes |
+| `numOfParkingFeatures` | `num_of_parking_features` | Yes |
+| `numOfPatioAndPorchFeatures` | `num_of_patio_and_porch_features` | Yes |
+| `numOfSecurityFeatures` | `num_of_security_features` | Yes |
+| `numOfWaterfrontFeatures` | `num_of_waterfront_features` | Yes |
+| `numOfWindowFeatures` | `num_of_window_features` | Yes |
+| `numOfCommunityFeatures` | `num_of_community_features` | Yes |
+| `lotSizeSqFt` | `lot_size_sq_ft` | Yes |
+| `livingAreaSqFt` | `living_area_sq_ft` | Yes |
+| `avgSchoolDistance` | `avg_school_distance` | Yes |
+| `avgSchoolRating` | `avg_school_rating` | Yes |
+| `avgSchoolSize` | `avg_school_size` | Yes |
+| `MedianStudentsPerTeacher` | `median_students_per_teacher` | Yes |
+| `numOfBathrooms` | `num_of_bathrooms` | Yes |
+| `numOfBedrooms` | `num_of_bedrooms` | Yes |
+| `numOfStories` | `num_of_stories` | Yes |
+| `city` | `city` | No — filtered to Austin then dropped |
+| `homeImage` | `home_image` | No — image URL, not used |
+| `hasCooling` | `has_cooling` | No |
+| `hasHeating` | `has_heating` | No |
+| `latestPriceSource` | `latest_price_source` | No |
+| `numOfElementarySchools` | `num_of_elementary_schools` | No |
+| `numOfHighSchools` | `num_of_high_schools` | No |
+| `numOfMiddleSchools` | `num_of_middle_schools` | No |
+| `numOfPrimarySchools` | `num_of_primary_schools` | No |
+| `numPriceChanges` | `num_price_changes` | No |
+| `parkingSpaces` | `parking_spaces` | No |
+| `propertyTaxRate` | `property_tax_rate` | No |
+| `numOfAccessibilityFeatures` | `num_of_accessibility_features` | No |
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `latest_price` | Continuous | USD | Most recent recorded sale price of the listing. Used as the outcome variable; models fit on `log(latest_price)`. |
+| `living_area_sq_ft` | Continuous | sq ft | Interior living area of the home. Key structural predictor; capped at 25,000 sq ft in preprocessing. |
+| `lot_size_sq_ft` | Continuous | sq ft | Total lot area. Capped at 43,560 sq ft (one acre) in preprocessing. |
+| `num_of_bedrooms` | Discrete | 1–6+ | Number of bedrooms. Restricted to 2–5 in the subset files. |
+| `num_of_bathrooms` | Discrete | — | Number of bathrooms. |
+| `num_of_stories` | Discrete | — | Number of stories. |
+| `year_built` | Discrete | year | Year the structure was built. |
+| `zipcode` | Categorical | — | 5-digit ZIP code. Used as a fixed effect or factor in models. |
+| `latitude` | Continuous | decimal degrees | Latitude of the listing. |
+| `longitude` | Continuous | decimal degrees | Longitude of the listing. |
+| `has_garage` | Binary | 0/1 | Indicator for an attached or detached garage. |
+| `has_spa` | Binary | 0/1 | Indicator for a spa or hot tub. |
+| `has_view` | Binary | 0/1 | Indicator that the listing is noted as having a view. |
+| `has_association` | Binary | 0/1 | Indicator for a homeowners association. |
+| `garage_spaces` | Discrete | — | Number of garage spaces. |
+| `home_type` | Categorical | — | Property type; filtered to "Single Family" in preprocessing. |
+| `latest_saledate` | — | date string | Date of most recent recorded sale. |
+| `latest_salemonth` | Discrete | 1–12 | Month of most recent recorded sale. |
+| `latest_saleyear` | Discrete | year | Year of most recent recorded sale. |
+| `avg_school_rating` | Continuous | — | Average rating of nearby schools. |
+| `avg_school_distance` | Continuous | — | Average distance to nearby schools. |
+| `avg_school_size` | Continuous | — | Average enrollment of nearby schools. |
+| `median_students_per_teacher` | Continuous | — | Median student-to-teacher ratio across nearby schools. |
+| `num_of_appliances` | Discrete | — | Count of listed appliances. |
+| `num_of_parking_features` | Discrete | — | Count of listed parking features. |
+| `num_of_patio_and_porch_features` | Discrete | — | Count of listed patio and porch features. |
+| `num_of_security_features` | Discrete | — | Count of listed security features. |
+| `num_of_waterfront_features` | Discrete | — | Count of listed waterfront features. |
+| `num_of_window_features` | Discrete | — | Count of listed window features. |
+| `num_of_community_features` | Discrete | — | Count of listed community features. |
+| `num_of_photos` | Discrete | — | Number of listing photos on Zillow. |
+| `description` | Text | — | Free-text listing description written by the seller or agent. Present in the source CSV; not carried through as a structured column in models (see embeddings below). |
+| `street_address` | Categorical | — | Street address of the listing. Not used in models. |
+| `zpid` | Discrete | — | Zillow property identifier. Serves as the join key between base datasets and the embeddings files. |
+| `age` | Derived (continuous) | years | `latest_saleyear − year_built`. Age of the structure at time of most recent sale. |
+
+: Variables from the Austin House Listings data. {#tbl-vars-housing-kaggle}
+
+### Text embeddings {.unnumbered}
+
+The `*_embeddings.csv` files append 1,536 numeric columns (`dim_1` through `dim_1536`) representing dense vector embeddings of each listing's `description` field. Embeddings were generated using OpenAI's `text-embedding-3-small` model and retrieved on 2026-06-23. Listings with missing or empty descriptions are excluded from the embeddings file and appear with `NA` in the embedding columns after the left join on `zpid`. The embeddings are used as predictors in lasso (`lasso.R`) and random forest (`rf.R`) models to assess the marginal predictive value of listing text beyond structural variables.
+

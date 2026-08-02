@@ -1,0 +1,80 @@
+## Weekly Asset Returns (2023–2025) {#sec-data-returns-2025}
+
+These data document weekly simple returns for 25 exchange-traded assets—individual
+equities, a sector ETF, bond ETFs, and a commodity ETF—alongside a contemporaneous
+weekly risk-free rate, covering the period September 30, 2023 to September 29, 2025. Prices
+are sourced from Yahoo Finance and converted to weekly simple returns using
+split- and dividend-adjusted closing prices. The dataset supports analysis of asset
+pricing and portfolio diversification: the companion script estimates the Capital
+Asset Pricing Model for each security and examines mean-variance tradeoffs across
+asset classes and holding-period horizons.
+
+The data ship as two files. `returns.csv` contains the weekly returns and the
+risk-free rate only. `returns_prices.csv` contains the identical rows plus the
+weekly adjusted closing price for every asset, in columns named `<ticker>_price`
+(with SPY's price as `market_price`); it supports exercises that contrast price
+levels with returns, such as the Ford-versus-Tesla comparison in the transformations
+chapter of the course notes.
+
+**Provenance.** Adjusted daily closing prices were retrieved from Yahoo Finance via
+the `tidyquant` R package. The data request covers September 30, 2023 to
+September 29, 2025 (`start_date` and `end_date` as set in `data_extract.R`). The risk-free rate is proxied by the
+13-week U.S. Treasury bill secondary-market yield (`^IRX`), converted from an
+annualized percentage to a weekly decimal rate by dividing by 100 and then by 52;
+forward-filling patches any holiday gaps in that series. Price columns in
+`returns_prices.csv` record the last available split- and dividend-adjusted daily
+close on or before each weekly return date, so prices and returns are aligned on
+the same Friday grid. Yahoo Finance terms of use
+restrict redistribution of raw price data; this assembled dataset is intended for
+educational use. See @returns-2025 for retrieval details.
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `date` | Discrete (date) | YYYY-MM-DD | End-of-week date corresponding to the Friday close used by `tq_transmute()` with `period = "weekly"`. |
+| `market` | Continuous | proportion | Weekly simple return on SPY (SPDR S&P 500 ETF Trust); renamed from `SPY` to signal its role as the market-portfolio proxy in CAPM estimation. |
+| `AAPL` … `VCIT` (24 columns) | Continuous | proportion | Weekly simple return for each individual asset; one column per ticker. Column names match the Yahoo Finance ticker symbol. See @tbl-tickers-returns-2025 for descriptions. |
+| `rf` | Derived (continuous) | proportion | Weekly risk-free rate, computed as `(^IRX / 100) / 52` from the annualized 13-week T-bill yield. |
+| `market_price`, `AAPL_price` … `VCIT_price` (25 columns, `returns_prices.csv` only) | Continuous | USD | Split- and dividend-adjusted closing price on each weekly return date (last available daily close on or before the date). `market_price` is the SPY price. |
+
+: Variables in the weekly asset returns data. {#tbl-vars-returns-2025}
+
+### Tickers {.unnumbered}
+
+The 24 individual-asset columns span equities, airlines, and fixed-income and
+commodity ETFs. The table below gives a brief description and a link to the ticker's
+profile page.
+
+| Ticker | Full name | Type | Description |
+|---|---|---|---|
+| [`AAPL`](https://finance.yahoo.com/quote/AAPL) | Apple Inc. | Equity | Consumer electronics, software, and services company; one of the largest publicly traded firms by market capitalization. |
+| [`AMZN`](https://finance.yahoo.com/quote/AMZN) | Amazon.com, Inc. | Equity | E-commerce and cloud computing (AWS) conglomerate; operates across retail, logistics, and digital services. |
+| [`GOOG`](https://finance.yahoo.com/quote/GOOG) | Alphabet Inc. (Class C) | Equity | Parent company of Google; generates revenue primarily from digital advertising, cloud services, and hardware. |
+| [`MSTR`](https://finance.yahoo.com/quote/MSTR) | Strategy Inc. | Equity | Business intelligence software company; holds a large Bitcoin treasury, making its stock returns highly sensitive to cryptocurrency prices. |
+| [`NVDA`](https://finance.yahoo.com/quote/NVDA) | NVIDIA Corporation | Equity | Designer of graphics processing units (GPUs) and AI accelerators; primary supplier of chips for large-scale machine learning workloads. |
+| [`TSLA`](https://finance.yahoo.com/quote/TSLA) | Tesla, Inc. | Equity | Electric vehicle and clean-energy company; high-growth, high-volatility stock with a large retail investor following. |
+| [`BRK-A`](https://finance.yahoo.com/quote/BRK-A) | Berkshire Hathaway Class A | Equity | Diversified holding company managed by Warren Buffett; subsidiaries span insurance, rail, energy, and consumer goods. Very high per-share price; otherwise economically identical to BRK-B. |
+| [`BRK-B`](https://finance.yahoo.com/quote/BRK-B) | Berkshire Hathaway Class B | Equity | 1/1500th economic interest in Berkshire Hathaway relative to Class A; more accessible price point, slightly different voting rights. |
+| [`JPM`](https://finance.yahoo.com/quote/JPM) | JPMorgan Chase & Co. | Equity | Largest U.S. bank by assets; operates commercial banking, investment banking, and asset management divisions. |
+| [`PG`](https://finance.yahoo.com/quote/PG) | Procter & Gamble Co. | Equity | Multinational consumer staples manufacturer (Tide, Pampers, Gillette); a canonical low-beta defensive stock. |
+| [`WMT`](https://finance.yahoo.com/quote/WMT) | Walmart Inc. | Equity | World's largest retailer by revenue; considered a defensive consumer-staples name despite its discretionary product mix. |
+| [`XOM`](https://finance.yahoo.com/quote/XOM) | Exxon Mobil Corporation | Equity | Integrated oil-and-gas major; returns are sensitive to crude oil prices and thus provide partial commodity exposure within an equity portfolio. |
+| [`BA`](https://finance.yahoo.com/quote/BA) | The Boeing Company | Equity | Commercial and defense aerospace manufacturer; subject to idiosyncratic risk from aircraft certification and production delays. |
+| [`CAT`](https://finance.yahoo.com/quote/CAT) | Caterpillar Inc. | Equity | Leading manufacturer of construction and mining equipment; returns are cyclically sensitive to global infrastructure spending. |
+| [`F`](https://finance.yahoo.com/quote/F) | Ford Motor Company | Equity | Legacy U.S. automaker; investing in electric vehicle transition while managing legacy internal-combustion operations. |
+| [`TGT`](https://finance.yahoo.com/quote/TGT) | Target Corporation | Equity | U.S. general-merchandise retailer; operates roughly 2,000 stores and competes directly with Walmart in consumer staples and discretionary categories. |
+| [`AAL`](https://finance.yahoo.com/quote/AAL) | American Airlines Group | Equity — airline | One of the world's largest airlines by passenger volume; carries substantial long-term debt from pandemic-era borrowing. |
+| [`ALK`](https://finance.yahoo.com/quote/ALK) | Alaska Air Group, Inc. | Equity — airline | Regional U.S. carrier focused on the Pacific Coast; acquired Hawaiian Airlines in 2024. |
+| [`DAL`](https://finance.yahoo.com/quote/DAL) | Delta Air Lines, Inc. | Equity — airline | Major U.S. carrier; generally regarded as one of the more financially stable legacy airlines. |
+| [`LUV`](https://finance.yahoo.com/quote/LUV) | Southwest Airlines Co. | Equity — airline | Low-cost U.S. carrier with a historically differentiated point-to-point route model; underwent significant strategic changes in 2024–2025. |
+| [`UAL`](https://finance.yahoo.com/quote/UAL) | United Airlines Holdings | Equity — airline | Major U.S. carrier with extensive international network; high revenue and cost exposure to fuel prices. |
+| [`GLD`](https://www.etf.com/GLD) | SPDR Gold Shares | ETF — commodity | Largest physically backed gold ETF; holds gold bullion in trust, providing direct exposure to gold spot prices without futures roll costs. |
+| [`JNK`](https://www.etf.com/JNK) | SPDR Bloomberg High Yield Bond ETF | ETF — fixed income | Tracks an index of U.S. dollar-denominated high-yield (below investment grade) corporate bonds; higher credit risk and yield than investment-grade bond ETFs. |
+| [`VCIT`](https://www.etf.com/VCIT) | Vanguard Intermediate-Term Corporate Bond ETF | ETF — fixed income | Tracks investment-grade U.S. corporate bonds with maturities of 5–10 years; lower credit risk than JNK but sensitive to interest-rate movements. |
+| [`XLK`](https://www.etf.com/XLK) | Technology Select Sector SPDR Fund | ETF — sector | Tracks the technology sector of the S&P 500 (software, hardware, semiconductors); heavily concentrated in Apple and NVIDIA. |
+
+: Asset tickers in the weekly returns data. {#tbl-tickers-returns-2025}
+
+---
+

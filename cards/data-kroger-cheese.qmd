@@ -1,0 +1,31 @@
+## Kroger Packaged Cheese Sales {#sec-data-kroger-cheese}
+
+These data record weekly sales of packaged, sliced American cheese at Kroger grocery
+stores across 11 U.S. cities. They were assembled by James Scott for use as a teaching
+dataset in *Data Science in R: A Gentle Introduction*, where they first appear in the
+Plots chapter to illustrate exploratory data visualization before being revisited in
+later chapters on regression with dummy variables. The data are used throughout to
+examine how price and in-store promotional displays relate to cheese sales volume.
+
+**Resources:**
+
+- [Data Science in R: A Gentle Introduction](https://bookdown.org/jgscott/DSGI/)
+
+**Provenance.** The data were compiled by James Scott (University of Texas at Austin)
+for instructional use and distributed with *Data Science in R: A Gentle Introduction*
+(bookdown, last updated August 2021). The dataset covers 11 U.S. cities — Atlanta,
+Birmingham, Cincinnati, Columbus, Dallas, Detroit, Houston, Indianapolis, Louisville,
+Nashville, and Roanoke — with 706 observations. No formal license is stated; the data
+are made available for educational use through the book's online companion. See
+@kroger-cheese for the primary citation.
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `vol` | Continuous | packages, 799–14,534 | Sales volume in packages of packaged, sliced American cheese. Serves as the outcome variable in regression analyses. |
+| `price` | Continuous | USD, 1.72–3.83 | Retail price charged per package. Key predictor of sales volume. |
+| `disp` | Binary | yes / no | Whether a promotional in-store display was shown during the observation period. Coded as a character variable ("yes" / "no"). |
+| `city` | Categorical | 11 cities | City in which the Kroger store is located (Atlanta, Birmingham, Cincinnati, Columbus, Dallas, Detroit, Houston, Indianapolis, Louisville, Nashville, Roanoke). |
+
+: Variables from the Kroger Packaged Cheese Sales data. {#tbl-vars-kroger-cheese}

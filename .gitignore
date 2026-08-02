@@ -1,0 +1,13 @@
+# The big four ship as GitHub Release assets (one zip per dataset per tag),
+# not as tracked files -- see manifest.yml `delivery: release-zip` and
+# tools/make_release.sh. The files stay here locally; git just doesn't carry
+# them. Keep this list and the manifest's delivery field in agreement.
+/data/soc/
+/data/ercot/
+/data/lending_club/
+/data/austin_houses/
+
+.DS_Store
+
+# make_release.sh output staging
+/release/

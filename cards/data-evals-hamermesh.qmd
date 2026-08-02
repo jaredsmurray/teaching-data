@@ -1,0 +1,36 @@
+## Course Evaluations and Instructor Appearance {#sec-data-evals-hamermesh}
+
+Do better-looking instructors get better teaching evaluations? @hamermesh-parker-2005 collected student course evaluations for 463 course sections taught by 94 instructors at the University of Texas at Austin between 2000 and 2002, along with a measure of each instructor's physical attractiveness: a panel of six students rated a photograph of each instructor, and the ratings were averaged and normalized. Hamermesh and Parker found that instructors rated as better looking receive systematically higher evaluations. In the regression chapters these data serve as a running multiple-regression example — in particular, whether the association between beauty ratings and evaluation scores survives adjusting for instructor age and other course and instructor characteristics.
+
+**Resources:**
+
+- [Article](https://doi.org/10.1016/j.econedurev.2004.07.013)
+- [AER package on CRAN](https://cran.r-project.org/package=AER) (distributes this extract as `TeachingRatings`)
+
+**Provenance.** The data were collected by Daniel Hamermesh and Amy Parker for @hamermesh-parker-2005. Each row is one course section; instructor characteristics (age, gender, beauty rating, and so on) repeat across an instructor's sections, indexed by `prof`. The beauty score is the average of six student panelists' ratings of the instructor's photograph, normalized to have mean zero across instructors (standard deviation about 0.79 in this file). This extract is the widely used teaching version of the data that circulates with Stock and Watson's econometrics text and is distributed in the R package AER as `TeachingRatings`; the one column not in that distribution, `generation`, is a recode of `age` added for teaching purposes. See @hamermesh-parker-2005 for the primary citation.
+
+### Dataset versions {.unnumbered}
+
+| File | Rows | Columns | Description |
+|---|---|---|---|
+| `hamermesh_evals.csv` | 463 | 13 | One row per course section evaluated, 2000--2002. |
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `eval` | Continuous | 1--5 (observed 2.1--5.0) | Average student evaluation score for the course section, on a 1 (very unsatisfactory) to 5 (excellent) scale. The outcome variable. |
+| `beauty` | Continuous | mean 0 (observed −1.45 to 1.97) | Instructor's beauty rating: the average of six student panelists' ratings of the instructor's photograph, normalized to mean zero. The key predictor. |
+| `age` | Discrete | years, 29--73 | Instructor's age. The main adjustment variable in the multiple-regression example. |
+| `gender` | Binary | female/male | Instructor's gender as recorded in the study. |
+| `minority` | Binary | no/yes | Whether the instructor belongs to a minority group. |
+| `native` | Binary | no/yes | Whether the instructor is a native English speaker. |
+| `tenure` | Binary | no/yes | Whether the instructor is on the tenure track. |
+| `division` | Binary | lower/upper | Whether the course is lower-division (introductory) or upper-division. |
+| `credits` | Binary | more/single | Whether the course is a standard multi-credit course (`more`) or a single-credit elective (`single`). |
+| `students` | Discrete | 5--380 | Number of students who completed the course evaluation. |
+| `allstudents` | Discrete | 8--581 | Total enrollment in the course section. |
+| `prof` | Identifier | 1--94 | Instructor identifier; each instructor appears in one or more course sections. |
+| `generation` | Derived (categorical) | genx/boomer/silent | Recode of `age` into bands (up to 40, 41--60, 61 and over), labeled with generation names. Not part of the original distribution; added for teaching purposes. |
+
+: Variables in the course evaluations data. {#tbl-vars-evals-hamermesh}

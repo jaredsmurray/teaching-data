@@ -1,0 +1,82 @@
+company,sap_solution,industry,roe,industry_roe,roe_diff
+Adidas-Salamon,CRM,"Consumer, retail",21.1,8.7,12.400000000000002
+Air Products and Chemicals,ERP,Chemicals,15.8,19.5,-3.6999999999999993
+Alcan Aluminum,SCM,Mill products,1.2,19.5,-18.3
+Anheuser-Busch Co. Inc,PLM,Consumer,61.2,22,39.2
+Arctic Cat,CRM,Auto,15.2,19.6,-4.400000000000002
+Astrazeneca,"SCM, CRM","Life sciences, pharmaceuticals",26.4,22.2,4.199999999999999
+Avaya Global Connect,CRM,Telecom,66.9,10.6,56.300000000000004
+Avid,CRM,High tech,5.4,3.7,1.7000000000000002
+BASF,"PLM, SCM","Chemicals, life sciences",12.2,19.5,-7.300000000000001
+Bayer Healthcare,SCM,Life Sciences,4.9,22.2,-17.299999999999997
+Beiersdorf-Lechia,SCM,Consumer,20.8,47.1,-26.3
+Biomet Europe,ERP,Manufacturing,23.3,14,9.3
+BMW,SCM,Automotive,13.2,11.9,1.299999999999999
+Brother International,"CRM, SAM","Consumer, retail",14.5,14.9,-0.40000000000000036
+Brown-Forman,SCM,Consumer,27.3,13.7,13.600000000000001
+Cable & Wireless,SRM,Telecom,17,15.6,1.4000000000000004
+Capstone Turbine,SCM,Industrial machinery,-41.1,8.8,-49.900000000000006
+Caterpillar,SAM,Logistics,35.9,18.2,17.7
+Colgate Palmolive,SCM,Consumer,116.4,47.1,69.30000000000001
+Conectiv Energy,SAM,Utilities,8.1,10.2,-2.0999999999999996
+Danfoss GMBH,CRM,Machinery,7.9,16.3,-8.4
+Danone,CRM,"Consumer, retail",6.7,16.4,-9.7
+Dow Corning,PLM,Chemicals,32.7,19.5,13.200000000000003
+Dragerwerk AG,CRM,Engineering construction,11.6,15.3,-3.700000000000001
+Dupont,SCM,"Chemicals, life sciences",17.1,19.5,-2.3999999999999986
+Eastman Kodak,SCM,"Chemicals, life sciences",-47.5,19.5,-67
+EnBW,CRM,Utilities,23.8,10.2,13.600000000000001
+Epson Korea,"SAM, CRM","Consumer, high tech",1.1,14.9,-13.8
+Ericsson,SRM,Telecom,26.7,8.6,18.1
+Fraport ag,"PLM, SCM, SAM, mobile","Aerospace, services",6.9,10.9,-4
+Freescale semiconductor,SCM,High tech,13.4,13.5,-0.09999999999999964
+GE Bayer Silicones,PLM,Chemicals,14.9,19.5,-4.6
+GE Engine Services,PLM,Aerospace,14.9,10.9,4
+Grammer,CRM,Automotive,14.6,11.9,2.6999999999999993
+HDI Hannover Versicherung AG,ERP,Insurance,-15.4,9.8,-25.200000000000003
+Heidelberger Druckmaschinen AG,PLM,Industrial machinery,4.6,8.8,-4.200000000000001
+Henkel,SCM,Consumer,43.9,48.8,-4.899999999999999
+Hero Honda Motors,"CRM,SRM",Auto,15.8,11.9,3.9000000000000004
+HP,SCM,High tech,6.4,14.2,-7.799999999999999
+IDS Scheer,Mobile,High tech,13.1,12.6,0.5
+Intermec Technologies,CRM,High tech,14.6,16.3,-1.700000000000001
+IVM Immobilien AG,ERP,Real estate,8.4,9.5,-1.0999999999999996
+Johns Manville Europe,SCM,Mill products,8.9,6.7,2.2
+Kraft Foods,"SCM, PLM",Consumer,8.8,16.4,-7.599999999999998
+Lenovo Group,CRM,High tech,23.1,14.2,8.900000000000002
+Loewe,"CRM, SAM","Consumer, retail",-91.8,3.7,-95.5
+Loreal,SCM,Consumer,45.8,47.1,-1.3000000000000043
+Molex,SCM,High tech,7.3,7.3,0
+MLP AG,CRM,Insurance,18.9,13.3,5.599999999999998
+Nissan Motor,SRM,Auto,22.8,11.9,10.9
+NOVA Chemicals,SAM,Chemicals,-7.7,19.5,-27.2
+Officemax,SCM,Retail,6.8,6.4,0.39999999999999947
+Paul Hartmann AG,CRM,Oil and gas,-9.2,15.3,-24.5
+Perrigo,SRM,Pharmaceuticals,-62.6,13.3,-75.9
+Phillips,"CRM, mobile","Manufacturing, consumer retail",18.7,20.2,-1.5
+Porsche,SCM,Automotive,27.3,11.9,15.4
+RCS Diffusione,SCM,Media,8.3,26,-17.7
+Rohm and Haas,CRM,Chemicals,16.7,19.5,-2.8000000000000007
+Rolls Royce,PLM,Aerospace,18.4,10.9,7.499999999999998
+Royal Dutch / Shell,SRM,Oil and gas,28.8,23.9,4.900000000000002
+RWE Systems,SRM,Utilities,25.6,10.2,15.400000000000002
+Schering do Brazil,CRM,Pharmaceuticals,16.9,22.2,-5.300000000000001
+Schwarz Pharma,CRM,Pharmaceuticals,0.3,22.2,-21.9
+Sea Containers,SRM,Transportation,-0.7,26.1,-26.8
+Shanghai General Motors Co.,SCM,Automotive,-38.5,11.9,-50.4
+Siemens AG,CRM,High tech,8.3,14.2,-5.899999999999999
+Siemens Medical,SCM,Health care,8.3,14,-5.699999999999999
+Siemens Mobile,Mobile,Telecommunications,8.3,8.6,-0.29999999999999893
+Siemens VDO Automotive,PLM,Automotive,8.3,11.9,-3.5999999999999996
+Sony Marketing Asia,SCM,High tech,6.2,7.3,-1.0999999999999996
+Sony of Canada,CRM,High tech,6.2,7.3,-1.0999999999999996
+Star Cruises,ERP,Transportation,-0.5,9.4,-9.9
+Texas Instruments,CRM,High tech,18.6,13.5,5.100000000000001
+TriQuint Semiconductor Inc.,ERP,High tech,0.9,9.8,-8.9
+Unilever,SCM,Consumer,47.4,16.4,31
+Valero Corporate Services,PLM,Oil and gas,27.3,19.2,8.100000000000001
+Villeroy & Bosch,Mobile,Consumer,4.7,2.6,2.1
+Volkswagen Grupp,CRM,Automotive,2.8,11.9,-9.100000000000001
+Waters Corporation,CRM,High tech,41.4,9.2,32.2
+Wincor Nixdorf International GmbH,ERP,High tech,26,14.2,11.8
+Xerox,SRM,High tech,14.6,14.2,0.40000000000000036
