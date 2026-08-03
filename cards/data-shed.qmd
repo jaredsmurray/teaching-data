@@ -1,0 +1,41 @@
+## Household economics (SHED) {#sec-data-shed}
+
+The Survey of Household Economics and Decisionmaking (SHED) is an annual
+survey of U.S. adults conducted since 2013 by the Board of Governors of the
+Federal Reserve System. It measures how households assess their own finances
+and the broader economy, alongside employment, income, housing, and
+demographic characteristics. The course extract `shed_2025.csv` covers the
+2025 wave: 12,934 respondents, drawn from a probability-based online panel
+designed to be representative of the U.S. adult population.
+
+**Resources:**
+
+- [SHED — Board of Governors of the Federal Reserve System](https://www.federalreserve.gov/consumerscommunities/shed.htm)
+- [Public-use data and codebooks](https://www.federalreserve.gov/consumerscommunities/shed_data.htm)
+
+**Provenance.** The public-use 2025 microdata file was downloaded from the
+Board's SHED data page. As a work of the federal government, the file is in
+the public domain and may be copied and distributed without permission; the
+Board requests citation. The course extract keeps nine columns from the
+original 380, renames them to snake_case, and changes no values. Survey
+weights are not carried in the extract; course examples report unweighted
+proportions, which on the extract's variables differ from weighted ones by
+less than a percentage point. Respondents rate every retained item on a
+forced-choice basis, so the extract has no missing values and no "don't
+know" category.
+
+### Variables {.unnumbered}
+
+| Variable | Type | Unit / Range | Description |
+|---|---|---|---|
+| `case_id` | Discrete | — | Respondent identifier assigned by the survey (`shedid` in the source file). |
+| `econ_conditions_country` | Categorical (ordinal) | Poor / Only fair / Good / Excellent | "In this country --- how would you rate economic conditions today?" (source item `B7_b`). |
+| `employment_status` | Categorical | Not working / Working part-time / Working full-time | Panel-recorded employment status (`ppemploy`). |
+| `household_income` | Categorical (ordinal) | 7 bins, Less than $10,000 to $150,000 or more | Total household income bin (`ppinc7`). |
+| `age_category` | Categorical (ordinal) | 7 bins, 18--24 to 75+ | Respondent age bin (`ppagecat`). |
+| `education` | Categorical (ordinal) | 4 levels | Highest educational attainment (`ppeducat`). |
+| `gender` | Categorical | Male / Female | Panel-recorded gender (`ppgender`). |
+| `region` | Categorical | Northeast / Midwest / South / West | Census region of residence (`ppreg4`). |
+| `housing_status` | Categorical | Own with mortgage / Own free and clear / Pay rent / Neither own nor rent | Home tenure (source item `GH1`). |
+
+: Variables in the SHED 2025 extract. {#tbl-vars-shed}

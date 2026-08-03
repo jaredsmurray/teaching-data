@@ -169,6 +169,19 @@ datasets:
         sha256: dca9dbbfa8fcf1ee6ce9ff64cfc694585760b7896dc941403c829d58016ea46b
         bytes: 2257262
         used_by_sources: true
+  shed:
+    label: "Household economics (SHED)"
+    card: "cards/data-shed.qmd"
+    delivery: tracked
+    restricted: false
+    archive_dir: "~/Dropbox/data/shed"
+    source: "Survey of Household Economics and Decisionmaking (SHED), 2025 wave; Board of Governors of the Federal Reserve System public-use file."
+    license: "U.S. federal public domain (Board of Governors); citation requested, not required."
+    files:
+      - path: "data/shed/shed_2025.csv"
+        sha256: 27968bd38d0a2850509fa1d25e68bc22f5d2c6b52115834d36ef60c7792234ee
+        bytes: 1889460
+        used_by_sources: true
   soc:
     label: "Survey of Consumers"
     card: "cards/data-consumer-soc.qmd"

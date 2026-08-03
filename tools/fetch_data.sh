@@ -95,12 +95,23 @@ while IFS=$'\t' read -r kind name label delivery restricted asset _card; do
   [ -n "$asset" ] || die "${name}: delivery is release-zip but no release_asset in manifest"
 
   if [ "$restricted" = "true" ]; then
-    # Restricted assets are not anonymously downloadable. gh handles auth.
-    command -v gh >/dev/null 2>&1 || die \
-      "${name} is restricted; the GitHub CLI (gh), authenticated, is required. Set RESTRICTED_REPO to override the host repo."
-    note "downloading restricted asset ${asset} from ${RESTRICTED_REPO} @ ${TAG}"
-    gh release download "$TAG" --repo "$RESTRICTED_REPO" --pattern "$asset" --dir "$TMP" --clobber \
-      || die "gh release download failed for ${asset}"
+    # Restricted assets are not anonymously downloadable; gh handles auth.
+    # A fetch without (working) gh SKIPS the dataset with a warning instead
+    # of dying: no course source reads restricted data anymore, so a public
+    # consumer still gets a fully usable pin. Skipped names are excluded
+    # from verification and listed at the end.
+    got_it=false
+    if command -v gh >/dev/null 2>&1; then
+      note "downloading restricted asset ${asset} from ${RESTRICTED_REPO} @ ${TAG}"
+      gh release download "$TAG" --repo "$RESTRICTED_REPO" --pattern "$asset" --dir "$TMP" --clobber \
+        && got_it=true
+    fi
+    if [ "$got_it" = false ]; then
+      note "WARNING: skipping restricted dataset '${name}' (needs an authenticated gh;"
+      note "         see docs/soc_reconstruction.md for the rebuild path)"
+      printf '%s\n' "$name" >> "${TMP}/skipped.txt"
+      continue
+    fi
   else
     note "downloading ${asset} (${label})"
     if ! curl -fsSL "${REPO_URL}/releases/download/${TAG}/${asset}" -o "${TMP}/${asset}"; then
@@ -117,8 +128,12 @@ done < "${TMP}/records.tsv"
 
 # --- 3. tracked files, then unpack + verify every declared file -------------
 fail=0
+skipped_ds() { [ -f "${TMP}/skipped.txt" ] && grep -Fxq "$1" "${TMP}/skipped.txt"; }
+
+nskip=0
 while IFS=$'\t' read -r kind name path sha packaged; do
   [ "$kind" = "F" ] || continue
+  if skipped_ds "$name"; then nskip=$((nskip + 1)); continue; fi
   target="${DEST}/${path}"
   mkdir -p "$(dirname "$target")"
 
@@ -150,4 +165,8 @@ done < "${TMP}/records.tsv"
 [ "$fail" -eq 0 ] || die "verification failed; ${DEST} is not a trustworthy pin"
 
 n=$(grep -c $'^F\t' "${TMP}/records.tsv" || true)
+n=$((n - nskip))
 note "ok: ${n} files verified against manifest.yml @ ${TAG} in ${DEST}"
+if [ -f "${TMP}/skipped.txt" ]; then
+  note "skipped restricted dataset(s): $(tr '\n' ' ' < "${TMP}/skipped.txt")"
+fi
