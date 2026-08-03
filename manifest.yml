@@ -48,7 +48,7 @@ datasets:
     label: "Returns"
     card: "cards/data-returns-2025.qmd"
     delivery: tracked
-    restricted: true
+    restricted: false
     archive_dir: "~/Dropbox/data/returns"
     source: "Adjusted daily closing prices from Yahoo Finance via tidyquant, 2023-09-30 to 2025-09-29."
     license: "No redistribution license. The card states Yahoo Finance terms of use restrict redistribution of raw price data; the assembled dataset is intended for educational use."
@@ -69,7 +69,7 @@ datasets:
     label: "Portfolios"
     card: "cards/data-portfolios-2025.qmd"
     delivery: tracked
-    restricted: true
+    restricted: false
     archive_dir: "~/Dropbox/data/portfolios"
     source: "Adjusted daily closing prices for SPY/EFA/TLT and ^IRX from Yahoo Finance via tidyquant, 2023-09-30 to 2025-09-29."
     license: "No redistribution license. The card states Yahoo Finance terms of use restrict redistribution of raw price data; the assembled dataset is intended for educational use."

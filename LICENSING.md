@@ -148,3 +148,23 @@ overridable `RESTRICTED_REPO` variable.
   SCA data export (a simpler export-and-process path than the original
   full-microdata build). Students currently touch soc only through rendered
   examples, not directly.
+
+## Final rulings (Jared, 2026-08-02, after source research)
+
+- **returns, portfolios → public.** The repro-script alternative fails the
+  pinned-numbers constraint (weekly-bar row drift and silent source
+  corrections make a re-fetch only approximately equal; the unofficial API
+  also breaks regularly), and every permissively-licensed alternative source
+  either bans redistribution outright (Stooq, Tiingo, Alpha Vantage) or
+  changes the numbers (IEX-based data). Shipping the frozen derived slice
+  follows deep CRAN/textbook precedent (ISLR2::Smarket/Weekly, GPL-2,
+  Yahoo-sourced returns; tsibbledata::gafa_stock, GPL-3; tidyquant::FANG,
+  MIT) — no documented enforcement ever, exposure is contract-on-the-fetcher
+  not copyright, prices are facts. The cards name Yahoo Finance and state the
+  fetch window; the extraction script remains in the workshop archive as
+  provenance.
+- **soc → stays restricted, permanently gated.** The SCA usage agreement
+  explicitly prohibits redistribution with no derived-data carve-out.
+  Public path for outsiders: docs/soc_reconstruction.md (rebuild from the
+  free SDA Cross-Section Archive export — the licensed fetch-don't-ship
+  pattern). Optional future step: request written consent from UMich.
