@@ -58,18 +58,18 @@ values are common, reflecting non-coding days.
 ### Manager Perceptions {.unnumbered}
 
 The perceptions dataset (`perceptions.csv`) contains one row per survey respondent-wave
-observation (*n* ≈ 2,660) and records employees' self-reported beliefs about how working
+observation (*n* = 2,660) and records employees' self-reported beliefs about how working
 from home affects their productivity, collected at baseline (before the policy) and
 endline (after six months). The paper focuses on whether managers updated their
-perceptions over the course of the experiment.
+perceptions over the course of the experiment. The extract contains no respondent
+identifier, so baseline and endline observations cannot be paired by employee.
 
 | Variable | Type | Unit / Range | Description |
 |---|---|---|---|
-| `prod_percent` | Ordinal | −20 to 30 | Numeric midpoint encoding of the respondent's self-reported productivity category. Values represent the midpoint percentage-point change in perceived efficiency (e.g., 20 = "15%–25% more efficient", 0 = "About the same", −10 = "5%–15% less efficient"). Outcome variable in the perceptions analysis. |
-| `productivity` | Ordinal | — | Self-reported productivity category. Ordered levels from least to most positive: "15%–25% less efficient", "5%–15% less efficient", "About the same", "5%–15% more efficient", "15%–25% more efficient", "25%–35% more efficient". |
-| `wave` | Categorical | baseline / endline | Survey timing. "baseline" was administered before the hybrid WFH policy began; "endline" was administered after six months. Used as the primary grouping variable in wave-level comparisons. |
-| `role` | Categorical | Managers / Non-managers | Whether the respondent held a managerial position. The paper finds that managers revised their perceptions from a perceived negative effect (−2.6% on average at baseline) to a positive one (+1.0% at endline), while non-managers' perceptions shifted less dramatically. |
-| `wave_n` | Derived (binary) | 0 / 1 | Numeric wave indicator constructed in `perceptions.R` (0 = baseline, 1 = endline). Used as the grouping variable in the wave-level t-test comparing overall productivity perceptions between baseline and endline. |
+| `wave` | Categorical | baseline / endline | Survey timing. "baseline" was administered before the hybrid WFH policy began; "endline" was administered after six months. The file contains 1,315 baseline and 1,345 endline observations. |
+| `productivity` | Ordinal | 9 ordered levels | Self-reported productivity category, ordered from strongest negative to strongest positive: "35% or more less efficient", "25%-35% less efficient", "15%-25% less efficient", "5%-15% less efficient", "About the same", "5%-15% more efficient", "15%-25% more efficient", "25%-35% more efficient", and "35% or more more efficient". |
+| `role` | Categorical | Managers / Non-managers | Whether the respondent held a managerial position. Counts are 314 managers and 1,001 non-managers at baseline, and 324 managers and 1,021 non-managers at endline. |
+| `prod_percent` | Discrete (numeric encoding) | −42.5 to 42.5 | Midpoint encoding of the ordered response: −42.5, −30, −20, −10, 0, 10, 20, 30, and 42.5 from the most negative through the most positive category. The open-ended outer categories use −42.5 and 42.5. |
 
 : Variables in `perceptions.csv`. {#tbl-vars-wfh-bloom-perceptions}
 
@@ -77,4 +77,3 @@ perceptions over the course of the experiment.
 
 We use the Bloom, Han & Liang (2024) hybrid WFH experimental data [@wfh-bloom];
 variable definitions and provenance are in @sec-data-wfh-bloom.
-

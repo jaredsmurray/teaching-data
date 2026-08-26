@@ -169,6 +169,10 @@ datasets:
         sha256: dca9dbbfa8fcf1ee6ce9ff64cfc694585760b7896dc941403c829d58016ea46b
         bytes: 2257262
         used_by_sources: true
+      - path: "data/bloom_wfh/perceptions.csv"
+        sha256: e708ee89f13394aef428327a426da7723f04adc0b8457061be518420f03cadfb
+        bytes: 124059
+        used_by_sources: true
   shed:
     label: "Household economics (SHED)"
     card: "cards/data-shed.qmd"
