@@ -63,6 +63,8 @@ from home affects their productivity, collected at baseline (before the policy) 
 endline (after six months). The paper focuses on whether managers updated their
 perceptions over the course of the experiment. The extract contains no respondent
 identifier, so baseline and endline observations cannot be paired by employee.
+The source export's single-precision approximations at the plus/minus 30 midpoints
+are normalized here to exact values.
 
 | Variable | Type | Unit / Range | Description |
 |---|---|---|---|

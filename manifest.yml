@@ -170,8 +170,8 @@ datasets:
         bytes: 2257262
         used_by_sources: true
       - path: "data/bloom_wfh/perceptions.csv"
-        sha256: e708ee89f13394aef428327a426da7723f04adc0b8457061be518420f03cadfb
-        bytes: 124059
+        sha256: 1156235896efdf38b1e9c877f17e352f9c12b5c832b943da5872994e32133403
+        bytes: 123079
         used_by_sources: true
   shed:
     label: "Household economics (SHED)"
